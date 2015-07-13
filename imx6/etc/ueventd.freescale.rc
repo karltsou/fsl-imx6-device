@@ -1,5 +1,5 @@
 /dev/pmem_gpu             0660   system     graphics
-/dev/ttymxc4              0660   bluetooth  bluetooth
+/dev/ttymxc1              0660   bluetooth  bluetooth
 /dev/snd/*                0660   system     audio
 /dev/ttyUSB*              0640   radio      radio
 /dev/ttyACM*              0640   radio      radio
@@ -11,7 +11,7 @@
 /dev/mxc_ipu              0660   media      system
 /dev/mxc_vpu              0660   media      system
 /dev/uinput               0660   system     bluetooth
-/dev/ttymxc2              0660   system     gps
+/dev/ttymxc2              0660   system     bluetooth
 /dev/ttya0                0660   system     gps
 /dev/ptya0                0660   system     gps
 /dev/ttya1                0660   system     gps
@@ -22,7 +22,7 @@
 /dev/watchdog             0660   system     root
 /dev/ir                   0660   system     system
 /dev/mma8x5x              0640   compass     system
-/dev/input/event2         0666   root        input
+/dev/input/event1         0666   root        input
 /dev/input/event0         0666   root        input
 
 # sysfs properties

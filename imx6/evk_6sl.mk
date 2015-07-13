@@ -37,14 +37,13 @@ PRODUCT_COPY_FILES += \
 
 # broadcom wifi
 PRODUCT_COPY_FILES += \
-        device/fsl/common/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+	device/fsl/evk_6sl/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
+	device/fsl/common/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
+	device/fsl/common/wifi/fw_43340_nw_bcmdhd.bin:vendor/firmware/fw_bcmdhd.bin
 
 DEVICE_PACKAGE_OVERLAYS := device/fsl/evk_6sl/overlay
-
 PRODUCT_CHARACTERISTICS := tablet
-
 PRODUCT_AAPT_CONFIG += xlarge large tvdpi hdpi
-
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
 	frameworks/native/data/etc/android.hardware.wifi.direct.xml:system/etc/permissions/android.hardware.wifi.direct.xml \

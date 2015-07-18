@@ -32,14 +32,13 @@ PRODUCT_COPY_FILES += \
 	device/fsl/common/input/imx-keypad.idc:system/usr/idc/imx-keypad.idc \
 	device/fsl/common/input/imx-keypad.kl:system/usr/keylayout/imx-keypad.kl \
 	device/fsl/evk_6sl/audio_policy.conf:system/etc/audio_policy.conf \
-	device/fsl/evk_6sl/audio_effects.conf:system/vendor/etc/audio_effects.conf \
-	device/fsl/evk_6sl/bcmdhd.ko:system/lib/modules
+	device/fsl/evk_6sl/audio_effects.conf:system/vendor/etc/audio_effects.conf
 
 # broadcom wifi
 PRODUCT_COPY_FILES += \
 	device/fsl/evk_6sl/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
 	device/fsl/common/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-	device/fsl/common/wifi/fw_43340_nw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin
+	device/fsl/common/wifi/fw_bcm43341.bin:system/vendor/firmware/fw_bcmdhd.bin
 
 DEVICE_PACKAGE_OVERLAYS := device/fsl/evk_6sl/overlay
 PRODUCT_CHARACTERISTICS := tablet

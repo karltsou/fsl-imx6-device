@@ -39,7 +39,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/fsl/evk_6sl/bcmdhd.ko:system/lib/modules/bcmdhd.ko \
 	device/fsl/common/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal \
-	device/fsl/common/wifi/fw_43340_nw_bcmdhd.bin:vendor/firmware/fw_bcmdhd.bin
+	device/fsl/common/wifi/fw_43340_nw_bcmdhd.bin:system/vendor/firmware/fw_bcmdhd.bin
 
 DEVICE_PACKAGE_OVERLAYS := device/fsl/evk_6sl/overlay
 PRODUCT_CHARACTERISTICS := tablet
